@@ -1,0 +1,337 @@
+/*custom styles for this site*/
+
+
+ .column {
+    flex: 100%;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Muli' , sans-serif;
+    font-weight: bolder;
+    font-size: 100px;    
+}
+
+h2 {
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h3 {
+    font-family: 'Prata', serif;
+    color: #fdcb6e;
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.background {
+    background: #fff;
+}
+
+.intro {
+    padding-top: 100px;
+}
+
+.greeting {
+    font-family: 'Prata', serif;
+    font-size: 52px;
+    color: #74b9ff;
+}
+
+.name {
+    font-family: 'Muli' , sans-serif;
+    color: #232323;
+}
+
+.passionate {
+    background: #fff;
+}
+
+.contact {
+    background: #fff;
+}
+
+.contact-me {
+    font-family: 'Prata', serif;
+    font-size: 32px;
+}
+
+.text { 
+    background: #eee;
+}
+
+.feel {
+    font-family: 'Muli' , sans-serif;
+    font-size: 28px;
+}
+
+.skills {
+    background: #eee;
+}
+
+.skills ul {
+    list-style: none;
+    width: 75%;
+}
+
+.skills i {
+    font-size: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #74b9ff;
+}
+
+.skills span {
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: 'Muli' , sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.projects {
+    margin-top: 75px;
+}
+
+.work img {
+    height: 150px;
+    width: auto;
+}
+
+.volunteer img {
+    height: 150px;
+    width: auto;
+}
+
+.design img {
+    width: 50%;
+    height: auto;
+}
+
+.photography img {
+    position: relative; 
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+.audio img {
+    width: 35%;
+    height: auto;
+}
+
+.photography ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.top {
+    padding-top: 125px;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #232323;
+}
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.name-top {
+    font-size: 24px;
+}
+
+.navbar {
+    line-height: 55px;
+}
+
+.divider {
+    margin-top: .35em;
+    margin-bottom: 0em;
+    border-width: 7px;
+}
+
+.legend {
+    font-size: 24px;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px 8;
+}
+
+.column img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.box:hover .overlay {
+  opacity: .50;
+}
+
+.icon {
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@-webkit-keyframes hvr-icon-bob {
+  0% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+    
+  50% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+    
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@keyframes hvr-icon-bob {
+  0% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+    
+  50% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+    
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@-webkit-keyframes hvr-icon-bob-float {
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes hvr-icon-bob-float {
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+.hvr-icon-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-icon-bob .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.hvr-icon-bob:hover .hvr-icon, .hvr-icon-bob:focus .hvr-icon, .hvr-icon-bob:active .hvr-icon {
+  -webkit-animation-name: hvr-icon-bob-float, hvr-icon-bob;
+  animation-name: hvr-icon-bob-float, hvr-icon-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/* Responsive layout for medium devices - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout for small devices - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    
+}
+ 
